@@ -10,7 +10,9 @@ Der Prototyp ist, wenn Du erfolgreich mit dem VPN verbunden bist unter http://19
 
 Im Menü lässt sich links unter Daten die Layer-Vorschau aufrufen. Sie lässt sich auch direkt mit folgendem Link aufrufen: http://192.168.198.24:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage
 Hier findet sich eine durchsuchbare Übersicht über die als Layer publizierten Daten. 
-In der Spalte "Gängige Formate" lässt sich jeweils mit dem OpenLayers Link eine rudimentäre Kartenansicht des Layer aufrufen. 
+In der Spalte "Gängige Formate" lässt sich jeweils mit dem OpenLayers Link eine rudimentäre Kartenansicht des Layer aufrufen. In der Spalte "Alle Formate" stehen weitere Formate in einem Dropdown-Menü zur Ansicht bzw. zum Download bereit.
+
+Für die Nutzung der Layer-Vorschau muss man nicht im Portal angemeldet sein.
 
 ## Web Processing Service
 
