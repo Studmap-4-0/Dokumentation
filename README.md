@@ -94,3 +94,7 @@ Hier kann durch das Hochladen eines passenden mit QGIS erstellen Stils Abhilfe g
 - Wechselt dann links unter "Daten" zu "Layer" und klickt auf den Layer, dem ihr den Stil hinzufügen wollt.
 - Klikct dann auf den Reiter "Publizierung" unter "WMS-Einstellungen" kann in einem Dropdown Menü der gerade hochgeladene Stil als Standardstil gesetzt werden.
 - Achtung: Einige Stil-Einstellungen können mit der Berechnung von Indices via WPS kollidieren und die Ergebnisse verfälschen. Im Zweifel kann vor der Berechnung einfach der Standardstil auf Raster gesetzt werden.
+
+![](https://github.com/Studmap-4-0/Dokumentation/blob/main/11.png)
+![](https://github.com/Studmap-4-0/Dokumentation/blob/main/12.png)
+![](https://github.com/Studmap-4-0/Dokumentation/blob/main/10.png)
