@@ -53,7 +53,7 @@ QGIS zeigt einen links einen Browser mit den möglichen Datenquellen an, hier ka
 1. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://192.168.198.24:8080/geoserver/ows eintragen. Im Browser stehen danach alle WM(T)S Layer die das Portal anbieten zur Verfügung.
 2. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://192.168.198.24:8080/geoserver/ows?acceptversions=2.0.0 eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
 
-![](https://github.com/Studmap-4-0/Dokumentation/blob/main/5.png) ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/6.png)
+![](https://github.com/Studmap-4-0/Dokumentation/blob/main/5.png)
 
 Die entsprechenden Daten stehen dann zur Arbeit in QGIS zur Verfügung und lassen sich zum Beispiel einfach per Drag&Drop ins aktuelle Projekt einbinden.
 Je nach Datentyp und Verwendungszweck ist die Darbietungsform die das Portal über die Web Services anbietet nicht ideal. Hier kann der Download der Daten über die Layerpreview (s.o.) abhilfe schaffen.
