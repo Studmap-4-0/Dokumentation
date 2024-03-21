@@ -34,4 +34,13 @@ Um den NDVI anhand des vorhandenen Beispieldatensatze zu berechnen müssen im WP
 
 ## Daten in QGIS als Layer einbinden
 
+Da das Studmap 4.0 Portal seine Daten als OGC-konforme Web Map Services, Web Map Tile Services und Web Feature Services anbietet. Dementsprechend lassen sich die Daten auch in jeder Desktop-GIS Software, die diese Standards unterstützen nutzen. Erläutrt wird die nötige Vorgehensweise anhand der Open Source Desktop GIS Software [QGIS](https://qgis.org/de/site/forusers/download.html)
+
+QGIS zeigt einen links einen Browser mit den möglichen Datenquellen an, hier kann das Portal an zwei einbinden.
+
+1. Rechtsklick auf WMS/WMTS und dann "Neue Verbdinung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und due URL http://192.168.198.24:8080/geoserver/ows eintragen. Im Browser stehen danach alle WM(T)S Layer die das Portal anbieten zur Verfügung.
+2. Rechtsklick auf WMS/WMTS und dann "Neue Verbdinung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und due URL http://192.168.198.24:8080/geoserver/ows?service=WFS&acceptversions=2.0.0&request=GetCapabilities eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
+
+Die entsprechenden Daten stehen dann zur Arbeit in QGIS zur Verfügung und lassen sich zum Beispiel einfach per Drag&Drop ins aktuelle Projekt einbinden.
+
 ## Layer via QGIS hochladen
