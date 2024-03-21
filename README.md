@@ -24,7 +24,7 @@ Für die Nutzung der Layer-Vorschau muss man nicht im Portal angemeldet sein.
 Auf den vorhandenen Daten lassen sich auch verschiedene Berechnungen als Web Processing Service durchführen.
 Hierfür wählst Du im linken Menü Demo und dann im Hauptteil der Seite den WPS Request-Builder aus.
 
-![](https://github.com/Studmap-4-0/Dokumentation/blob/main/2.png) ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/3.png)
+![](https://github.com/Studmap-4-0/Dokumentation/blob/main/3.png)
 
 
 Als Beispiel wird unten die Berechnung des Vegetationsindex NDVI erläutert.
