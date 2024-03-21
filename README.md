@@ -50,8 +50,8 @@ Da das Studmap 4.0 Portal seine Daten als OGC-konforme Web Map Services, Web Map
 
 QGIS zeigt einen links einen Browser mit den möglichen Datenquellen an, hier kann das Portal an zwei Stellen einbinden.
 
-1. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und due URL http://192.168.198.24:8080/geoserver/ows eintragen. Im Browser stehen danach alle WM(T)S Layer die das Portal anbieten zur Verfügung.
-2. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und due URL http://192.168.198.24:8080/geoserver/ows?service=WFS&acceptversions=2.0.0&request=GetCapabilities eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
+1. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://192.168.198.24:8080/geoserver/ows eintragen. Im Browser stehen danach alle WM(T)S Layer die das Portal anbieten zur Verfügung.
+2. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://192.168.198.24:8080/geoserver/ows?acceptversions=2.0.0 eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
 
 ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/5.png)
 
