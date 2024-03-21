@@ -38,8 +38,8 @@ Da das Studmap 4.0 Portal seine Daten als OGC-konforme Web Map Services, Web Map
 
 QGIS zeigt einen links einen Browser mit den möglichen Datenquellen an, hier kann das Portal an zwei einbinden.
 
-1. Rechtsklick auf WMS/WMTS und dann "Neue Verbdinung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und due URL http://192.168.198.24:8080/geoserver/ows eintragen. Im Browser stehen danach alle WM(T)S Layer die das Portal anbieten zur Verfügung.
-2. Rechtsklick auf WMS/WMTS und dann "Neue Verbdinung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und due URL http://192.168.198.24:8080/geoserver/ows?service=WFS&acceptversions=2.0.0&request=GetCapabilities eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
+1. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und due URL http://192.168.198.24:8080/geoserver/ows eintragen. Im Browser stehen danach alle WM(T)S Layer die das Portal anbieten zur Verfügung.
+2. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und due URL http://192.168.198.24:8080/geoserver/ows?service=WFS&acceptversions=2.0.0&request=GetCapabilities eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
 
 Die entsprechenden Daten stehen dann zur Arbeit in QGIS zur Verfügung und lassen sich zum Beispiel einfach per Drag&Drop ins aktuelle Projekt einbinden.
 Je nach Datentyp und Verwendungszweck ist die Darbietungsform die das Portal über die Web Services anbietet nicht ideal. Hier kann der Download der Daten über die Layerpreview (s.o.) abhilfe schaffen.
@@ -61,3 +61,13 @@ Mit Test Connection lassen sich die Einstellungen dann überprüfen.
 Um die Daten zu publizieren müssen diese als Layer im aktuellen Projekt vorhanden sein. Das Projekt muss auch gespeichert sein. Wähle hierfür am besten einen eindeutigen Namen.
 Wähle dann im Menü des Plugins den Reiter Publish. Setze Haken bei den Layern, die du hochladen möchtest und gebe ihnen Rechts einen Titel.
 Unten wählst du dann bei Data Server den gerade angelegten Server aus und klickst auf Publish. Die Daten werden dann hochgeladen und stehen im Portal zur Verfügung.
+
+Nicht immer sogrt die Darstellungsart, die das Portal selbst wählt, für eine passende Darstellung in der Layer Preview oder den per Download oder Web Services verfügbaren Daten.
+Hier kann durch das Hochladen eines passenden mit QGIS erstellen Stils Abhilfe geschaffen werden. 
+Hierzu wird in QGIS die Symbologie des Layers entsprechend angepasst (Rechtsklick auf den Layer unten links, dann "Eigenschaften" bzw. "Properties" und dann "Symbologie" bzw. "Symbology"). Dort kann der Stzil dann auch exportiert werden. Im selben Menü wählt man unten "Stil" bzw. "Style" dann "Stil speichern" bzw. "Save Style" und dann als SLD Style speichern.
+Um den Stil im Potral hochzuladen meldet euch unter http://192.168.198.24:8080/geoserver/web/ an.
+Wählt links unter "Daten" "Stile" aus und klikct auf "Hinzufügen eines neuen Stils".
+Wählt einen passenden Namen und ladet eure gerade erzeugte Stildatei hoch. Prüft mit der Schaltfläche "Validieren" auf Fehler und speichert den Stil dann mit der entsprechenden Schaltfläche.
+Wechselt dann links unter "Daten" zu "Layer" und klickt auf den Layer, dem ihr den Stil hinzufügen wollt.
+Klikct dann auf den Reiter "Publizierung" unter "WMS-Einstellungen" kann in einem Dropdown Menü der gerade hochgeladene Stil als Standardstil gesetzt werden.
+Achtung: Einige Stil-Einstellungen können mit der Berechnung von Indices via WPS kollidieren und die Ergebnisse verfälschen. Im Zweifel kann vor der Berechnung einfach der Standardstil auf Raster gesetzt werden.
