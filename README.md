@@ -77,7 +77,7 @@ Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen 
 ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/8.png)
 
 - Um die Daten zu publizieren müssen diese als Layer im aktuellen Projekt vorhanden sein.
-- Das Projekt muss auch gespeichert sein. Wähle hierfür am besten einen eindeutigen Namen.
+- Das Projekt muss auch gespeichert sein. Wähle hierfür am besten einen eindeutigen Namen. Dieser darf keine Umlaute enthalten.
 - Wähle dann im Menü des Plugins den Reiter Publish.
 - Setze Haken bei den Layern, die du hochladen möchtest und gebe ihnen Rechts einen Titel.
 - Unten wählst du dann bei Data Server den gerade angelegten Server aus und klickst auf Publish. Die Daten werden dann hochgeladen und stehen im Portal zur Verfügung.
