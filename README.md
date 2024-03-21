@@ -50,4 +50,14 @@ Es ist auch möglich mit QGIS Daten für das Portal hochzuladen. Hierfür benöt
 Es muss das QGIS Plugion [GeoCat Bridge](https://geocat.github.io/qgis-bridge-plugin/latest/index.html) installiert werden.
 Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen und GeoCat Bridge suchen und auswählen und unten rechts auf die Schaltfläöche "Install Plugin" bzw "Plugin installieren" klicken.
 
-In der Toolbar erscheint dann ein Symbol "Publish" bzw. "Verööfentlichen", mit dem sich das Plugin dann einrichten und nutzen lässt.
+In der Toolbar erscheint dann ein Symbol "Publish", mit dem sich das Plugin dann einrichten und nutzen lässt.
+Es muss der Reiter "Servers"ausgwählt werden und dort dann auf "New Server"geklickt und Geoserver ausgewählt werden.
+Der Name des Servers ist frei wählbar.
+Die URL muss http://192.168.198.24:8080/geoserver/web/ lauten.
+Als Storage sollte "File-based Storage" gewählt werden.
+Bei den Credentials müssen Deine Zugangsdaten für den Geosevereingegen werden. Hierfür musst Du auf das grüne Plus Klicken um sie hinzuzufügen. Gib einen Namen Deiner Wahl an, wähle Basic Authentification und gebe Deine Zugangsdaten bei Username und password ein. Eventuell verlangt QGIS ein Masterpassword von dir, um deine Credentials zu verwalten, dies kannst Du beliebig wählen.
+Mit Test Connection lassen sich die Einstellungen dann überprüfen.
+
+Um die Daten zu publizieren müssen diese als Layer im aktuellen Projekt vorhanden sein. Das Projekt muss auch gespeichert sein. Wähle hierfür am besten einen eindeutigen Namen.
+Wähle dann im Menü des Plugins den Reiter Publish. Setze Haken bei den Layern, die du hochladen möchtest und gebe ihnen Rechts einen Titel.
+Unten wählst du dann bei Data Server den gerade angelegten Server aus und klickst auf Publish. Die Daten werden dann hochgeladen und stehen im Portal zur Verfügung.
