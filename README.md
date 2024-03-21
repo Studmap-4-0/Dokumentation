@@ -46,9 +46,9 @@ Um den NDVI anhand des vorhandenen Beispieldatensatze zu berechnen müssen im WP
 
 ## Daten in QGIS als Layer einbinden
 
-Da das Studmap 4.0 Portal seine Daten als OGC-konforme Web Map Services, Web Map Tile Services und Web Feature Services anbietet. Dementsprechend lassen sich die Daten auch in jeder Desktop-GIS Software, die diese Standards unterstützen nutzen. Erläutrt wird die nötige Vorgehensweise anhand der Open Source Desktop GIS Software [QGIS](https://qgis.org/de/site/forusers/download.html)
+Da das Studmap 4.0 Portal seine Daten als OGC-konforme Web Map Services, Web Map Tile Services und Web Feature Services anbietet, lassen sich die Daten auch in jeder Desktop-GIS Software, die diese Standards unterstützen nutzen. Erläutert wird die nötige Vorgehensweise anhand der Open Source Desktop GIS Software [QGIS](https://qgis.org/de/site/forusers/download.html)
 
-QGIS zeigt einen links einen Browser mit den möglichen Datenquellen an, hier kann das Portal an zwei Stellen einbinden.
+QGIS zeigt links einen Browser mit den möglichen Datenquellen an, hier kann man das Portal an zwei Stellen einbinden.
 
 1. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://192.168.198.24:8080/geoserver/ows eintragen. Im Browser stehen danach alle WM(T)S Layer die das Portal anbieten zur Verfügung.
 2. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://192.168.198.24:8080/geoserver/ows?acceptversions=2.0.0 eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
@@ -56,13 +56,13 @@ QGIS zeigt einen links einen Browser mit den möglichen Datenquellen an, hier ka
 ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/5.png)
 
 Die entsprechenden Daten stehen dann zur Arbeit in QGIS zur Verfügung und lassen sich zum Beispiel einfach per Drag&Drop ins aktuelle Projekt einbinden.
-Je nach Datentyp und Verwendungszweck ist die Darbietungsform die das Portal über die Web Services anbietet nicht ideal. Hier kann der Download der Daten über die Layerpreview (s.o.) abhilfe schaffen.
+Je nach Datentyp und Verwendungszweck ist die Darbietungsform die das Portal über die Web Services anbietet nicht ideal. Hier kann der Download der Daten über die Layerpreview (s.o.) Abhilfe schaffen.
 
 ## Layer via QGIS hochladen
 
 Es ist auch möglich mit QGIS Daten für das Portal hochzuladen. Hierfür benötigst du Deine Zugangsdaten.
-Es muss das QGIS Plugion [GeoCat Bridge](https://geocat.github.io/qgis-bridge-plugin/latest/index.html) installiert werden.
-Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen und GeoCat Bridge suchen und auswählen und unten rechts auf die Schaltfläöche "Install Plugin" bzw "Plugin installieren" klicken.
+Es muss das QGIS Plugin [GeoCat Bridge](https://geocat.github.io/qgis-bridge-plugin/latest/index.html) installiert werden.
+Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen und GeoCat Bridge suchen und auswählen und unten rechts auf die Schaltfläche "Install Plugin" bzw "Plugin installieren" klicken.
 
 ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/7.png)
 
@@ -71,7 +71,7 @@ Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen 
 - Der Name des Servers ist frei wählbar.
 - Die URL muss http://192.168.198.24:8080/geoserver/web/ lauten.
 - Als Storage sollte "File-based Storage" gewählt werden.
-- Bei den Credentials müssen Deine Zugangsdaten für den Geosevereingegen werden. Hierfür musst Du auf das grüne Plus Klicken um sie hinzuzufügen. Gib einen Namen Deiner Wahl an, wähle Basic Authentification und gebe Deine Zugangsdaten bei Username und password ein. Eventuell verlangt QGIS ein Masterpassword von dir, um deine Credentials zu verwalten, dies kannst Du beliebig wählen.
+- Bei den Credentials müssen Deine Zugangsdaten für das Portal eingegeben werden. Hierfür musst Du auf das grüne Plus klicken um sie hinzuzufügen. Gib einen Namen Deiner Wahl an, wähle Basic Authentification und gebe Deine Zugangsdaten bei Username und Password ein. Eventuell verlangt QGIS ein Masterpassword von dir, um deine Credentials zu verwalten, dies kannst Du beliebig wählen.
 - Mit Test Connection lassen sich die Einstellungen dann überprüfen.
 
 ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/8.png)
@@ -86,9 +86,9 @@ Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen 
 
 Nicht immer sorgt die Darstellungsart, die das Portal selbst wählt, für eine passende Darstellung in der Layer Preview oder den per Download oder Web Services verfügbaren Daten.
 Hier kann durch das Hochladen eines passenden mit QGIS erstellen Stils Abhilfe geschaffen werden. 
-- Hierzu wird in QGIS die Symbologie des Layers entsprechend angepasst (Rechtsklick auf den Layer unten links, dann "Eigenschaften" bzw. "Properties" und dann "Symbologie" bzw. "Symbology"). Dort kann der Stzil dann auch exportiert werden. Im selben Menü wählt man unten "Stil" bzw. "Style" dann "Stil speichern" bzw. "Save Style" und dann als SLD Style speichern.
+- Hierzu wird in QGIS die Symbologie des Layers entsprechend angepasst (Rechtsklick auf den Layer unten links, dann "Eigenschaften" bzw. "Properties" und dann "Symbologie" bzw. "Symbology"). Dort kann der Stil dann auch exportiert werden. Im selben Menü wählt man unten "Stil" bzw. "Style" dann "Stil speichern" bzw. "Save Style" und dann als SLD Style speichern.
 - Um den Stil im Potral hochzuladen meldet euch unter http://192.168.198.24:8080/geoserver/web/ oben an.
-- Wählt links unter "Daten" "Stile" aus und klikct auf "Hinzufügen eines neuen Stils".
+- Wählt links unter "Daten" "Stile" aus und klickt auf "Hinzufügen eines neuen Stils".
 - Wählt einen passenden Namen und ladet eure gerade erzeugte Stildatei hoch.
   Prüft mit der Schaltfläche "Validieren" auf Fehler und speichert den Stil dann mit der entsprechenden Schaltfläche.
 - Wechselt dann links unter "Daten" zu "Layer" und klickt auf den Layer, dem ihr den Stil hinzufügen wollt.
