@@ -42,5 +42,12 @@ QGIS zeigt einen links einen Browser mit den möglichen Datenquellen an, hier ka
 2. Rechtsklick auf WMS/WMTS und dann "Neue Verbdinung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und due URL http://192.168.198.24:8080/geoserver/ows?service=WFS&acceptversions=2.0.0&request=GetCapabilities eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
 
 Die entsprechenden Daten stehen dann zur Arbeit in QGIS zur Verfügung und lassen sich zum Beispiel einfach per Drag&Drop ins aktuelle Projekt einbinden.
+Je nach Datentyp und Verwendungszweck ist die Darbietungsform die das Portal über die Web Services anbietet nicht ideal. Hier kann der Download der Daten über die Layerpreview (s.o.) abhilfe schaffen.
 
 ## Layer via QGIS hochladen
+
+Es ist auch möglich mit QGIS Daten für das Portal hochzuladen. Hierfür benötigst du Deine Zugangsdaten.
+Es muss das QGIS Plugion [GeoCat Bridge](https://geocat.github.io/qgis-bridge-plugin/latest/index.html) installiert werden.
+Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen und GeoCat Bridge suchen und auswählen und unten rechts auf die Schaltfläöche "Install Plugin" bzw "Plugin installieren" klicken.
+
+In der Toolbar erscheint dann ein Symbol "Publish" bzw. "Verööfentlichen", mit dem sich das Plugin dann einrichten und nutzen lässt.
