@@ -50,24 +50,27 @@ Es ist auch möglich mit QGIS Daten für das Portal hochzuladen. Hierfür benöt
 Es muss das QGIS Plugion [GeoCat Bridge](https://geocat.github.io/qgis-bridge-plugin/latest/index.html) installiert werden.
 Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen und GeoCat Bridge suchen und auswählen und unten rechts auf die Schaltfläöche "Install Plugin" bzw "Plugin installieren" klicken.
 
-In der Toolbar erscheint dann ein Symbol "Publish", mit dem sich das Plugin dann einrichten und nutzen lässt.
-Es muss der Reiter "Servers"ausgwählt werden und dort dann auf "New Server"geklickt und Geoserver ausgewählt werden.
-Der Name des Servers ist frei wählbar.
-Die URL muss http://192.168.198.24:8080/geoserver/web/ lauten.
-Als Storage sollte "File-based Storage" gewählt werden.
-Bei den Credentials müssen Deine Zugangsdaten für den Geosevereingegen werden. Hierfür musst Du auf das grüne Plus Klicken um sie hinzuzufügen. Gib einen Namen Deiner Wahl an, wähle Basic Authentification und gebe Deine Zugangsdaten bei Username und password ein. Eventuell verlangt QGIS ein Masterpassword von dir, um deine Credentials zu verwalten, dies kannst Du beliebig wählen.
-Mit Test Connection lassen sich die Einstellungen dann überprüfen.
+- In der Toolbar erscheint dann ein Symbol "Publish", mit dem sich das Plugin dann einrichten und nutzen lässt.
+- Es muss der Reiter "Servers"ausgwählt werden und dort dann auf "New Server"geklickt und Geoserver ausgewählt werden.
+- Der Name des Servers ist frei wählbar.
+- Die URL muss http://192.168.198.24:8080/geoserver/web/ lauten.
+- Als Storage sollte "File-based Storage" gewählt werden.
+- Bei den Credentials müssen Deine Zugangsdaten für den Geosevereingegen werden. Hierfür musst Du auf das grüne Plus Klicken um sie hinzuzufügen. Gib einen Namen Deiner Wahl an, wähle Basic Authentification und gebe Deine Zugangsdaten bei Username und password ein. Eventuell verlangt QGIS ein Masterpassword von dir, um deine Credentials zu verwalten, dies kannst Du beliebig wählen.
+- Mit Test Connection lassen sich die Einstellungen dann überprüfen.
 
-Um die Daten zu publizieren müssen diese als Layer im aktuellen Projekt vorhanden sein. Das Projekt muss auch gespeichert sein. Wähle hierfür am besten einen eindeutigen Namen.
-Wähle dann im Menü des Plugins den Reiter Publish. Setze Haken bei den Layern, die du hochladen möchtest und gebe ihnen Rechts einen Titel.
-Unten wählst du dann bei Data Server den gerade angelegten Server aus und klickst auf Publish. Die Daten werden dann hochgeladen und stehen im Portal zur Verfügung.
+- Um die Daten zu publizieren müssen diese als Layer im aktuellen Projekt vorhanden sein.
+- Das Projekt muss auch gespeichert sein. Wähle hierfür am besten einen eindeutigen Namen.
+- Wähle dann im Menü des Plugins den Reiter Publish.
+- Setze Haken bei den Layern, die du hochladen möchtest und gebe ihnen Rechts einen Titel.
+- Unten wählst du dann bei Data Server den gerade angelegten Server aus und klickst auf Publish. Die Daten werden dann hochgeladen und stehen im Portal zur Verfügung.
 
-Nicht immer sogrt die Darstellungsart, die das Portal selbst wählt, für eine passende Darstellung in der Layer Preview oder den per Download oder Web Services verfügbaren Daten.
+Nicht immer sorgt die Darstellungsart, die das Portal selbst wählt, für eine passende Darstellung in der Layer Preview oder den per Download oder Web Services verfügbaren Daten.
 Hier kann durch das Hochladen eines passenden mit QGIS erstellen Stils Abhilfe geschaffen werden. 
-Hierzu wird in QGIS die Symbologie des Layers entsprechend angepasst (Rechtsklick auf den Layer unten links, dann "Eigenschaften" bzw. "Properties" und dann "Symbologie" bzw. "Symbology"). Dort kann der Stzil dann auch exportiert werden. Im selben Menü wählt man unten "Stil" bzw. "Style" dann "Stil speichern" bzw. "Save Style" und dann als SLD Style speichern.
-Um den Stil im Potral hochzuladen meldet euch unter http://192.168.198.24:8080/geoserver/web/ an.
-Wählt links unter "Daten" "Stile" aus und klikct auf "Hinzufügen eines neuen Stils".
-Wählt einen passenden Namen und ladet eure gerade erzeugte Stildatei hoch. Prüft mit der Schaltfläche "Validieren" auf Fehler und speichert den Stil dann mit der entsprechenden Schaltfläche.
-Wechselt dann links unter "Daten" zu "Layer" und klickt auf den Layer, dem ihr den Stil hinzufügen wollt.
-Klikct dann auf den Reiter "Publizierung" unter "WMS-Einstellungen" kann in einem Dropdown Menü der gerade hochgeladene Stil als Standardstil gesetzt werden.
-Achtung: Einige Stil-Einstellungen können mit der Berechnung von Indices via WPS kollidieren und die Ergebnisse verfälschen. Im Zweifel kann vor der Berechnung einfach der Standardstil auf Raster gesetzt werden.
+- Hierzu wird in QGIS die Symbologie des Layers entsprechend angepasst (Rechtsklick auf den Layer unten links, dann "Eigenschaften" bzw. "Properties" und dann "Symbologie" bzw. "Symbology"). Dort kann der Stzil dann auch exportiert werden. Im selben Menü wählt man unten "Stil" bzw. "Style" dann "Stil speichern" bzw. "Save Style" und dann als SLD Style speichern.
+- Um den Stil im Potral hochzuladen meldet euch unter http://192.168.198.24:8080/geoserver/web/ oben an.
+- Wählt links unter "Daten" "Stile" aus und klikct auf "Hinzufügen eines neuen Stils".
+- Wählt einen passenden Namen und ladet eure gerade erzeugte Stildatei hoch.
+  Prüft mit der Schaltfläche "Validieren" auf Fehler und speichert den Stil dann mit der entsprechenden Schaltfläche.
+- Wechselt dann links unter "Daten" zu "Layer" und klickt auf den Layer, dem ihr den Stil hinzufügen wollt.
+- Klikct dann auf den Reiter "Publizierung" unter "WMS-Einstellungen" kann in einem Dropdown Menü der gerade hochgeladene Stil als Standardstil gesetzt werden.
+- Achtung: Einige Stil-Einstellungen können mit der Berechnung von Indices via WPS kollidieren und die Ergebnisse verfälschen. Im Zweifel kann vor der Berechnung einfach der Standardstil auf Raster gesetzt werden.
