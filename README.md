@@ -26,7 +26,7 @@ Um den NDVI anhand des vorhandenen Beispieldatensatze zu berechnen müssen im WP
 1. Im Dropdown-Menü unter "Prozess auswählen" die Option "ras:jiffle" wählen.
 2. Unter den Prozessparametern folgendes auswählen bzw. eingeben
 3. Unter Source "Raster(s)" im linken Dropdwon Menü erst "RASTER_LAYER" auswählen und dann im rechten Dropdown Menü "Sentil2:sentinel_rgbnir" auswählen.
-4. In das Textfeld unter "script" dann folgendes kopieren `nir = src[3]; vir = src[2]; dest = (nir - vir) / (nir + vir);
+4. In das Textfeld unter "script" dann folgendes kopieren: `nir = src[3]; vir = src[2]; dest = (nir - vir) / (nir + vir);`
 5. Dann unten links auf "Prozess ausführen" klicken
 6. Es öffnet sich ein Popup mit dem Text "Lade ........"
 7. Nach einger Zeit stratet der Download des Ergebnisses.
