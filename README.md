@@ -13,7 +13,7 @@ Im Menü lässt sich links unter Daten die Layer-Vorschau aufrufen. Sie lässt s
 ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/1.png)
 
 Hier findet sich eine durchsuchbare Übersicht über die als Layer publizierten Daten. 
-In der Spalte "Gängige Formate" lässt sich jeweils mit dem OpenLayers Link eine rudimentäre Kartenansicht des Layer aufrufen. In der Spalte "Alle Formate" stehen weitere Formate in einem Dropdown-Menü zur Ansicht bzw. zum Download bereit.
+In der Spalte "Gängige Formate" lässt sich jeweils mit dem OpenLayers Link eine rudimentäre Kartenansicht des Layer aufrufen. Achtung: Es wird nicht autonatisch auf die richtige Maßstabsebene gezoom, u.U. muss manuell auf eune passende Maßsabsebene gezoomt werden.In der Spalte "Alle Formate" stehen weitere Formate in einem Dropdown-Menü zur Ansicht bzw. zum Download bereit.
 
 ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/2.png)
 
