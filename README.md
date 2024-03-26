@@ -69,7 +69,7 @@ Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen 
 - In der Toolbar erscheint dann ein Symbol "Publish", mit dem sich das Plugin dann einrichten und nutzen lässt.
 - Es muss der Reiter "Servers"ausgwählt werden und dort dann auf "New Server"geklickt und Geoserver ausgewählt werden.
 - Der Name des Servers ist frei wählbar.
-- Die URL muss http://192.168.198.24:8080/geoserver/web/ lauten.
+- Die URL muss http://192.168.198.24:8080/geoserver lauten.
 - Als Storage sollte "File-based Storage" gewählt werden.
 - Bei den Credentials müssen Deine Zugangsdaten für das Portal eingegeben werden. Hierfür musst Du auf das grüne Plus klicken um sie hinzuzufügen. Gib einen Namen Deiner Wahl an, wähle Basic Authentification und gebe Deine Zugangsdaten bei Username und Password ein. Eventuell verlangt QGIS ein Masterpassword von dir, um deine Credentials zu verwalten, dies kannst Du beliebig wählen.
 - Mit Test Connection lassen sich die Einstellungen dann überprüfen.
