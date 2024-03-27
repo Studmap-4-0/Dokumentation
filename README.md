@@ -86,13 +86,13 @@ Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen 
 
 Nicht immer sorgt die Darstellungsart, die das Portal selbst wählt, für eine passende Darstellung in der Layer Preview oder den per Download oder Web Services verfügbaren Daten.
 Hier kann durch das Hochladen eines passenden mit QGIS erstellen Stils Abhilfe geschaffen werden. 
-- Hierzu wird in QGIS die Symbologie des Layers entsprechend angepasst (Rechtsklick auf den Layer unten links, dann "Eigenschaften" bzw. "Properties" und dann "Symbologie" bzw. "Symbology"). Dort kann der Stil dann auch exportiert werden. Im selben Menü wählt man unten "Stil" bzw. "Style" dann "Stil speichern" bzw. "Save Style" und dann als SLD Style speichern.
+- Hierzu wird in QGIS die Symbologie des Layers entsprechend angepasst (Rechtsklick auf den Layer unten links, dann "Eigenschaften" bzw. "Properties" und  dann "Symbologie" bzw. "Symbology"). Dort kann der Stil dann auch exportiert werden. Im selben Menü wählt man unten "Stil" bzw. "Style" dann "Stil speichern" bzw. "Save Style" und dann als SLD Style speichern (Achtung: voreingestellt ist ein QGIS-eigenes Format).
 - Um den Stil im Potral hochzuladen meldet euch unter http://192.168.198.24:8080/geoserver/web/ oben an.
 - Wählt links unter "Daten" "Stile" aus und klickt auf "Hinzufügen eines neuen Stils".
 - Wählt einen passenden Namen und ladet eure gerade erzeugte Stildatei hoch.
   Prüft mit der Schaltfläche "Validieren" auf Fehler und speichert den Stil dann mit der entsprechenden Schaltfläche.
-- Wechselt dann links unter "Daten" zu "Layer" und klickt auf den Layer, dem ihr den Stil hinzufügen wollt.
-- Klikct dann auf den Reiter "Publizierung" unter "WMS-Einstellungen" kann in einem Dropdown Menü der gerade hochgeladene Stil als Standardstil gesetzt werden.
+- Wechselt links unter "Daten" zu "Layer" und klickt auf den Layer, dem ihr den Stil hinzufügen wollt.
+- Klickt auf den Reiter "Publizierung" unter "WMS-Einstellungen" kann in einem Dropdown Menü der gerade hochgeladene Stil als Standardstil gesetzt werden.
 - Achtung: Einige Stil-Einstellungen können mit der Berechnung von Indices via WPS kollidieren und die Ergebnisse verfälschen. Im Zweifel kann vor der Berechnung einfach der Standardstil auf Raster gesetzt werden.
 
 ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/11.png)
