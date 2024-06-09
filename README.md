@@ -64,7 +64,7 @@ Es ist auch möglich mit QGIS Daten für das Portal hochzuladen. Hierfür benöt
 Es muss das QGIS Plugin [GeoCat Bridge](https://geocat.github.io/qgis-bridge-plugin/latest/index.html) installiert werden.
 Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen und GeoCat Bridge suchen und auswählen und unten rechts auf die Schaltfläche "Install Plugin" bzw "Plugin installieren" klicken.
 
-![](https://github.com/Studmap-4-0/Dokumentation/blob/main/GeoCatBridge.png)
+![](https://github.com/Studmap-4-0/Dokumentation/blob/main/7.png)
 
 - In der Toolbar erscheint dann ein Symbol "Publish", mit dem sich das Plugin dann einrichten und nutzen lässt.
 - Es muss der Reiter "Servers"ausgwählt werden und dort dann auf "New Server"geklickt und Geoserver ausgewählt werden.
