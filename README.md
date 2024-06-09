@@ -4,11 +4,11 @@
 
 Danke, dass Du Dich bereit erklärt hast, die Studmap 4.0 Testumgebung zu testen und Dein Feedback abzugeben.
 Dieser Prototyp dient als Proof of Concept für ein Geodatenportal für Foschung und Lehre am Fachbereich 14 Geowissenschaften der Universität Münster.
-Der Prototyp ist, wenn Du erfolgreich mit dem VPN verbunden bist unter http://192.168.198.24:8080/geoserver/web/ zu erreichen.
+Der Prototyp ist, wenn Du erfolgreich mit dem Netzwerk der Universität Münster verbunden bist (auch via VPN) unter http://zdm-studmap.uni-muenster.de/:8080/geoserver/web/ zu erreichen.
 
 ## LayerVorschau
 
-Im Menü lässt sich links unter Daten die Layer-Vorschau aufrufen. Sie lässt sich auch direkt mit folgendem Link aufrufen: http://192.168.198.24:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage
+Im Menü lässt sich links unter Daten die Layer-Vorschau aufrufen. Sie lässt sich auch direkt mit folgendem Link aufrufen: http://zdm-studmap.uni-muenster.de/:8080/geoserver/web/wicket/bookmarkable/org.geoserver.web.demo.MapPreviewPage
 
 ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/1.png)
 
@@ -50,8 +50,8 @@ Da das Studmap 4.0 Portal seine Daten als OGC-konforme Web Map Services, Web Map
 
 QGIS zeigt links einen Browser mit den möglichen Datenquellen an, hier kann man das Portal an zwei Stellen einbinden.
 
-1. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://192.168.198.24:8080/geoserver/ows eintragen. Im Browser stehen danach alle WM(T)S Layer die das Portal anbieten zur Verfügung.
-2. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://192.168.198.24:8080/geoserver/ows?acceptversions=2.0.0 eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
+1. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://zdm-studmap.uni-muenster.de/:8080/geoserver/ows eintragen. Im Browser stehen danach alle WM(T)S Layer die das Portal anbieten zur Verfügung.
+2. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://zdm-studmap.uni-muenster.de/:8080/geoserver/ows?acceptversions=2.0.0 eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
 
 ![](https://github.com/Studmap-4-0/Dokumentation/blob/main/5.png)
 
@@ -69,7 +69,7 @@ Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen 
 - In der Toolbar erscheint dann ein Symbol "Publish", mit dem sich das Plugin dann einrichten und nutzen lässt.
 - Es muss der Reiter "Servers"ausgwählt werden und dort dann auf "New Server"geklickt und Geoserver ausgewählt werden.
 - Der Name des Servers ist frei wählbar.
-- Die URL muss http://192.168.198.24:8080/geoserver lauten.
+- Die URL muss http://zdm-studmap.uni-muenster.de/:8080/geoserver lauten.
 - Als Storage sollte "File-based Storage" gewählt werden.
 - Bei den Credentials müssen Deine Zugangsdaten für das Portal eingegeben werden. Hierfür musst Du auf das grüne Plus klicken um sie hinzuzufügen. Gib einen Namen Deiner Wahl an, wähle Basic Authentification und gebe Deine Zugangsdaten bei Username und Password ein. Eventuell verlangt QGIS ein Masterpassword von dir, um deine Credentials zu verwalten, dies kannst Du beliebig wählen.
 - Mit Test Connection lassen sich die Einstellungen dann überprüfen.
@@ -87,7 +87,7 @@ Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen 
 Nicht immer sorgt die Darstellungsart, die das Portal selbst wählt, für eine passende Darstellung in der Layer Preview oder den per Download oder Web Services verfügbaren Daten.
 Hier kann durch das Hochladen eines passenden mit QGIS erstellen Stils Abhilfe geschaffen werden. 
 - Hierzu wird in QGIS die Symbologie des Layers entsprechend angepasst (Rechtsklick auf den Layer unten links, dann "Eigenschaften" bzw. "Properties" und  dann "Symbologie" bzw. "Symbology"). Dort kann der Stil dann auch exportiert werden. Im selben Menü wählt man unten "Stil" bzw. "Style" dann "Stil speichern" bzw. "Save Style" und dann als SLD Style speichern (Achtung: voreingestellt ist ein QGIS-eigenes Format).
-- Um den Stil im Potral hochzuladen meldet euch unter http://192.168.198.24:8080/geoserver/web/ oben an.
+- Um den Stil im Potral hochzuladen meldet euch unter http://zdm-studmap.uni-muenster.de/:8080/geoserver/web/ oben an.
 - Wählt links unter "Daten" "Stile" aus und klickt auf "Hinzufügen eines neuen Stils".
 - Wählt einen passenden Namen und ladet eure gerade erzeugte Stildatei hoch.
   Prüft mit der Schaltfläche "Validieren" auf Fehler und speichert den Stil dann mit der entsprechenden Schaltfläche.
