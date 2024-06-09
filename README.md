@@ -74,7 +74,7 @@ Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen 
 - Bei den Credentials müssen Deine Zugangsdaten für das Portal eingegeben werden. Hierfür musst Du auf das grüne Plus klicken um sie hinzuzufügen. Gib einen Namen Deiner Wahl an, wähle Basic Authentification und gebe Deine Zugangsdaten bei Username und Password ein. Eventuell verlangt QGIS ein Masterpassword von dir, um deine Credentials zu verwalten, dies kannst Du beliebig wählen.
 - Mit Test Connection lassen sich die Einstellungen dann überprüfen.
 
-![](https://github.com/Studmap-4-0/Dokumentation/blob/main/8.png)
+![](https://github.com/Studmap-4-0/Dokumentation/blob/main/GeoCatBridge.png)
 
 - Um die Daten zu publizieren müssen diese als Layer im aktuellen Projekt vorhanden sein.
 - Das Projekt muss auch gespeichert sein. Wähle hierfür am besten einen eindeutigen Namen. Dieser darf keine Umlaute enthalten.
