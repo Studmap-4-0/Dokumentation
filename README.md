@@ -51,9 +51,9 @@ Da das Studmap 4.0 Portal seine Daten als OGC-konforme Web Map Services, Web Map
 QGIS zeigt links einen Browser mit den möglichen Datenquellen an, hier kann man das Portal an zwei Stellen einbinden.
 
 1. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://zdm-studmap.uni-muenster.de/:8080/geoserver/ows eintragen. Im Browser stehen danach alle WM(T)S Layer die das Portal anbieten zur Verfügung.
-2. Rechtsklick auf WMS/WMTS und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://zdm-studmap.uni-muenster.de/:8080/geoserver/ows?acceptversions=2.0.0 eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
+2. Rechtsklick auf WFS/OGC APi - Features und dann "Neue Verbindung" bzw. "New Connection" wählen. Dort dann einen Namen deiner Wahl und die URL http://zdm-studmap.uni-muenster.de/:8080/geoserver/ows?acceptversions=2.0.0 eintragen. Im Browser stehen danach alle WFS Layer die das Portal anbieten zur Verfügung. (Stand zu Zeitpunkt der Dokumentationserstellung: 0)
 
-![](https://github.com/Studmap-4-0/Dokumentation/blob/main/5.png)
+![](https://github.com/Studmap-4-0/Dokumentation/blob/main/wms.png)
 
 Die entsprechenden Daten stehen dann zur Arbeit in QGIS zur Verfügung und lassen sich zum Beispiel einfach per Drag&Drop ins aktuelle Projekt einbinden.
 Je nach Datentyp und Verwendungszweck ist die Darbietungsform die das Portal über die Web Services anbietet nicht ideal. Hier kann der Download der Daten über die Layerpreview (s.o.) Abhilfe schaffen.
@@ -64,7 +64,7 @@ Es ist auch möglich mit QGIS Daten für das Portal hochzuladen. Hierfür benöt
 Es muss das QGIS Plugin [GeoCat Bridge](https://geocat.github.io/qgis-bridge-plugin/latest/index.html) installiert werden.
 Hierfür den Reiter Plugins auswählen. Dann links "All" bzw. "Alle" auswählen und GeoCat Bridge suchen und auswählen und unten rechts auf die Schaltfläche "Install Plugin" bzw "Plugin installieren" klicken.
 
-![](https://github.com/Studmap-4-0/Dokumentation/blob/main/7.png)
+![](https://github.com/Studmap-4-0/Dokumentation/blob/main/GeoCatBridge.png)
 
 - In der Toolbar erscheint dann ein Symbol "Publish", mit dem sich das Plugin dann einrichten und nutzen lässt.
 - Es muss der Reiter "Servers"ausgwählt werden und dort dann auf "New Server"geklickt und Geoserver ausgewählt werden.
